@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parliament Debate Competition Registration - MIT Muzaffarpur</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="form-header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <i class="fas fa-university"></i>
+                    <div class="institution-info">
+                        <h1>MIT Muzaffarpur</h1>
+                        <p>Higher Education CUF</p>
+                    </div>
+                </div>
+                <div class="event-badge">
+                    <i class="fas fa-gavel"></i>
+                    <span>Parliament Debate Competition 2024</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Form -->
+        <main class="form-container">
+            <div class="form-intro">
+                <h2><i class="fas fa-microphone-alt"></i> Register for Parliament Debate Competition</h2>
+                <p>Join us for an exciting intellectual battle of words and ideas. Show your debating prowess and represent your batch!</p>
+                <div class="event-details">
+                    <div class="detail-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Registration Deadline: March 15, 2024</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-users"></i>
+                        <span>Open to all batches: 2022, 2023, 2024, 2025</span>
+                    </div>
+                </div>
+            </div>
+
+            <form id="registrationForm" class="registration-form">
+                <!-- Personal Information Section -->
+                <section class="form-section">
+                    <h3><i class="fas fa-user"></i> Personal Information</h3>
+                    
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rollNumber">Roll Number *</label>
+                        <input type="text" id="rollNumber" name="rollNumber" required placeholder="Enter your roll number">
+                    </div>
+                </section>
+
+                <!-- Academic Information Section -->
+                <section class="form-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Academic Details</h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="batch">Batch Year *</label>
+                            <select id="batch" name="batch" required>
+                                <option value="">Select your batch</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="branch">Branch/Department *</label>
+                            <select id="branch" name="branch" required>
+                                <option value="">Select your branch</option>
+                                <option value="Computer Science Engineering">Computer Science Engineering</option>
+                                <option value="Electronics & Communication">Electronics & Communication</option>
+                                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                                <option value="Civil Engineering">Civil Engineering</option>
+                                <option value="Electrical Engineering">Electrical Engineering</option>
+                                <option value="Information Technology">Information Technology</option>
+                                <option value="Chemical Engineering">Chemical Engineering</option>
+                                <option value="Biotechnology">Biotechnology</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="semester">Current Semester *</label>
+                        <select id="semester" name="semester" required>
+                            <option value="">Select semester</option>
+                            <option value="1">1st Semester</option>
+                            <option value="2">2nd Semester</option>
+                            <option value="3">3rd Semester</option>
+                            <option value="4">4th Semester</option>
+                            <option value="5">5th Semester</option>
+                            <option value="6">6th Semester</option>
+                            <option value="7">7th Semester</option>
+                            <option value="8">8th Semester</option>
+                        </select>
+                    </div>
+                </section>
+
+                <!-- Debate Experience Section -->
+                <section class="form-section">
+                    <h3><i class="fas fa-trophy"></i> Debate Experience & Interests</h3>
+                    
+                    <div class="form-group">
+                        <label for="experience">Previous Debate Experience *</label>
+                        <select id="experience" name="experience" required>
+                            <option value="">Select your experience level</option>
+                            <option value="Beginner">Beginner (No prior experience)</option>
+                            <option value="Intermediate">Intermediate (1-2 competitions)</option>
+                            <option value="Advanced">Advanced (3+ competitions)</option>
+                            <option value="Expert">Expert (Won competitions/awards)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Areas of Interest (Select all that apply) *</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests" value="Politics & Governance">
+                                <span class="checkmark"></span>
+                                Politics & Governance
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests" value="Social Issues">
+                                <span class="checkmark"></span>
+                                Social Issues
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests" value="Technology & Innovation">
+                                <span class="checkmark"></span>
+                                Technology & Innovation
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests" value="Environment & Climate">
+                                <span class="checkmark"></span>
+                                Environment & Climate
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests" value="Economics & Finance">
+                                <span class="checkmark"></span>
+                                Economics & Finance
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests" value="Education & Youth">
+                                <span class="checkmark"></span>
+                                Education & Youth
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests" value="Healthcare">
+                                <span class="checkmark"></span>
+                                Healthcare
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests" value="International Relations">
+                                <span class="checkmark"></span>
+                                International Relations
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="motivation">Why do you want to participate?</label>
+                        <textarea id="motivation" name="motivation" placeholder="Share your motivation for joining this debate competition (optional)" rows="4"></textarea>
+                    </div>
+                </section>
+
+                <!-- Team Preference Section -->
+                <section class="form-section">
+                    <h3><i class="fas fa-users-cog"></i> Team Preferences</h3>
+                    
+                    <div class="form-group">
+                        <label for="teamPreference">Team Formation Preference *</label>
+                        <select id="teamPreference" name="teamPreference" required>
+                            <option value="">Select preference</option>
+                            <option value="Individual">Individual Participation</option>
+                            <option value="WithPartner">I have a debate partner</option>
+                            <option value="RandomAssignment">Random team assignment</option>
+                            <option value="SameBatch">Prefer teammate from same batch</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="partnerDetails" style="display: none;">
+                        <label for="partnerName">Partner's Name</label>
+                        <input type="text" id="partnerName" name="partnerName" placeholder="Enter your partner's full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferredRole">Preferred Debate Role *</label>
+                        <select id="preferredRole" name="preferredRole" required>
+                            <option value="">Select preferred role</option>
+                            <option value="Opening Speaker">Opening Speaker (Present main arguments)</option>
+                            <option value="Rebuttal Speaker">Rebuttal Speaker (Counter opponent's points)</option>
+                            <option value="Closing Speaker">Closing Speaker (Summarize and conclude)</option>
+                            <option value="Flexible">Flexible (Any role)</option>
+                        </select>
+                    </div>
+                </section>
+
+                <!-- Additional Information -->
+                <section class="form-section">
+                    <h3><i class="fas fa-info-circle"></i> Additional Information</h3>
+                    
+                    <div class="form-group">
+                        <label for="achievements">Relevant Achievements (Optional)</label>
+                        <textarea id="achievements" name="achievements" placeholder="Any debate awards, public speaking experience, or relevant achievements" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="specialRequirements">Special Requirements/Accessibility Needs (Optional)</label>
+                        <textarea id="specialRequirements" name="specialRequirements" placeholder="Any special accommodations needed" rows="2"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-item agreement">
+                            <input type="checkbox" id="agreement" name="agreement" required>
+                            <span class="checkmark"></span>
+                            I agree to the terms and conditions of the competition and commit to participate if selected *
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-item newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <span class="checkmark"></span>
+                            I would like to receive updates about future events and competitions
+                        </label>
+                    </div>
+                </section>
+
+                <!-- Submit Button -->
+                <div class="submit-section">
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Register for Competition
+                    </button>
+                    <p class="submit-note">Please review all information before submitting. You will receive a confirmation email shortly.</p>
+                </div>
+            </form>
+        </main>
+
+        <!-- Admin Panel (Hidden by default, only visible after authentication) -->
+        <div class="admin-panel hidden" id="admin-panel">
+            <div class="admin-header">
+                <h3>📊 Registration Data</h3>
+                <div class="responses-info">
+                    <span>Total Responses: <strong id="responses-count">0</strong></span>
+                </div>
+            </div>
+            <div class="admin-actions">
+                <button type="button" class="export-btn" onclick="exportResponses('json')">
+                    📄 Export JSON
+                </button>
+                <button type="button" class="export-btn" onclick="exportResponses('csv')">
+                    📊 Export CSV
+                </button>
+                <button type="button" class="admin-toggle" onclick="toggleAdminPanel()">
+                    👁️ Toggle Panel
+                </button>
+                <a href="admin.html" class="admin-btn" style="text-decoration: none; display: inline-flex; align-items: center;">
+                    <i class="fas fa-shield-alt" style="margin-right: 5px;"></i> Admin Panel
+                </a>
+            </div>
+        </div>
+        
+        <!-- Admin Login Button (Visible to all users) -->
+        <div class="admin-login-container">
+            <a href="admin.html" target="_blank" class="admin-login-btn" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
+                <i class="fas fa-lock" style="margin-right: 5px;"></i> Admin Login
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="form-footer">
+            <p>&copy; 2024 MIT Muzaffarpur - Higher Education CUF. All rights reserved.</p>
+            <p>For queries, contact: <a href="mailto:debate@mitmuzaffarpur.edu">debate@mitmuzaffarpur.edu</a></p>
+        </footer>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h3>Registration Successful!</h3>
+            </div>
+            <div class="modal-body">
+                <p>Thank you for registering for the Parliament Debate Competition!</p>
+                <p>You will receive a confirmation email with further details shortly.</p>
+                <p><strong>Registration ID:</strong> <span id="registrationId"></span></p>
+            </div>
+            <div class="modal-footer">
+                <button onclick="closeModal()" class="modal-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
